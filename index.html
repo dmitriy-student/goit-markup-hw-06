@@ -26,20 +26,24 @@
     <header class="header">
       <div class="container">
         <div class="header-container">
-          <nav class="navigation">
+          <nav class="header-navigation">
             <a href="./index.html" class="link logo">Web<span>Studio</span></a>
-            <ul class="list header-navigation-list">
+            <ul class="list header-navigation__list">
               <li>
-                <a class="link navigation-link current-page" href="./index.html"
+                <a
+                  class="link header-navigation__link header-navigation__link--current-page"
+                  href="./index.html"
                   >Студія</a
                 >
               </li>
               <li>
-                <a class="link navigation-link" href="./portfolio.html"
+                <a class="link header-navigation__link" href="./portfolio.html"
                   >Портфоліо</a
                 >
               </li>
-              <li><a class="link navigation-link" href="">Контакти</a></li>
+              <li>
+                <a class="link header-navigation__link" href="">Контакти</a>
+              </li>
             </ul>
           </nav>
           <ul class="header-address list">
@@ -455,7 +459,7 @@
                 class="footer-subscribe-input"
                 placeholder="E-mail"
               />
-              <button class="subscribe-button">
+              <button type="submit" class="subscribe-button">
                 Підписатися
                 <svg width="24" height="24" class="footer-subscribe-svg">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -545,10 +549,10 @@
                   <a class="modal-link" href="#">Умови договору</a></label
                 >
               </div>
+              <button type="submit" class="modal-submit-button">
+                Відправити
+              </button>
             </form>
-            <button type="submit" class="modal-submit-button">
-              Відправити
-            </button>
           </div>
         </div>
       </div>
